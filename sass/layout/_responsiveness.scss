@@ -31,6 +31,14 @@
 }
 
 //EVENT-SCREEN
+@media screen and (min-width: 1024px) {
+    .overlay__content .speakers-profile-section {
+        justify-content: space-around;
+    }
+    .overlay__content .social-feed {
+        justify-content: space-around;
+    }
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .overlay__content .resources-list {
         justify-content: space-between;

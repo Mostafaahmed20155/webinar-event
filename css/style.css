@@ -13,7 +13,8 @@ html {
       font-size: 50%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  height: 100vh; }
 
 body {
   font-family: 'Montserrat', sans-serif; }
@@ -532,6 +533,12 @@ footer {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .form__group {
     width: 100%; } }
+
+@media screen and (min-width: 1024px) {
+  .overlay__content .speakers-profile-section {
+    justify-content: space-around; }
+  .overlay__content .social-feed {
+    justify-content: space-around; } }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .overlay__content .resources-list {
