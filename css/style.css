@@ -377,9 +377,26 @@ body {
   width: 100%;
   height: 100vh;
   display: flex; }
-  .bg-container .left-panel-picture {
+  .bg-container .left-panel {
     width: 35%;
-    box-shadow: 1rem 0.3rem 6rem rgba(126, 126, 126, 0.22); }
+    background-image: linear-gradient(to bottom, #343434, #000000);
+    box-shadow: 1rem 0.3rem 6rem rgba(126, 126, 126, 0.22);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .bg-container .left-panel .company-logo-white {
+      position: absolute;
+      top: 8%;
+      left: 20%; }
+    .bg-container .left-panel .webinar-title {
+      color: white;
+      font-size: 10rem;
+      text-transform: uppercase;
+      font-weight: 200;
+      line-height: 9rem; }
+      .bg-container .left-panel .webinar-title span {
+        font-weight: 600; }
   .bg-container .right-panel {
     width: 65%;
     display: flex;
@@ -513,11 +530,33 @@ footer {
     footer .footer-icon:not(:last-child) {
       margin-right: 2rem; }
 
+@media screen and (max-width: 1440px) {
+  .bg-container .left-panel .webinar-title {
+    font-size: 7rem;
+    line-height: 7rem; }
+  .company-logo-white {
+    width: 60%; } }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .form__group {
+    width: 100%; } }
+
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .bg-container {
     flex-direction: column; }
-  .bg-container .left-panel-picture {
-    width: 100%; }
+  .bg-container .left-panel {
+    width: 100%;
+    height: 100%; }
+  .bg-container .left-panel .webinar-title {
+    text-align: center;
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-top: 10rem; }
+  .bg-container .left-panel .company-logo-white {
+    left: 50%;
+    transform: translateX(-50%); }
+  .company-logo-white {
+    width: 25rem; }
   .bg-container .right-panel {
     width: 100%; }
   .form__group {
@@ -529,10 +568,6 @@ footer {
     width: 80%; }
   .bg-container .right-panel .form-btn {
     margin: 2.5rem 0; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .form__group {
-    width: 100%; } }
 
 @media screen and (min-width: 1024px) {
   .overlay__content .speakers-profile-section {
